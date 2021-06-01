@@ -1,0 +1,1033 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    ::selection{
+       background-color: rgba(7,42,41,0.65);
+    }
+
+    &:visited{
+        text-transform: none;
+        color: rgb(238,238,238);
+    }
+}
+
+/* Página Radar e Complementares*/
+body{
+    background-color: rgb(238,238,238);
+
+    /* Página Home*/
+    .page_index{
+        position: fixed;
+    }
+
+    .paralax{
+        background-attachment: fixed;
+    }
+    .nav_home{
+        background-color: rgba(7,42,41,0.65);
+        box-shadow: 0 0 2vh rgba(7,42,41,1);
+        width: 100%;
+        height: 80px;
+        margin: 0 center;
+
+        
+
+        .menu{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content:space-between;
+        align-items: center;
+        padding-top: 0px;
+        
+        
+  
+       
+            .left_menu{
+                text-decoration: none;
+                display: flex;
+                list-style: none;
+
+                li{
+                    position: relative;
+                    
+                    .visited{
+                        display: block;
+                        text-decoration: none;
+                        padding: 30px 20px;
+                        background-color: rgba(238,238,238,1);
+                        color:rgba(7,42,41,1);
+
+                    }
+                    :hover{
+                        background-color: rgba(7,42,41,1);
+                        color: rgba(238,238,238,1);
+                    }    
+                    
+                    .noVisited{
+                        display: block;
+                        text-decoration: none;
+                        padding: 30px 20px;
+
+                    }
+                    :hover{
+                        background-color: rgba(7,42,41,1);
+                    }  
+                }
+            }
+
+            .right_menu{
+                text-decoration: none;
+                display: flex;
+                list-style: none;
+
+                .botaoEntrar{
+                    padding-top: 20px;
+                }
+                li{
+                    position: relative;
+                    
+
+                    button{
+                        display: block;
+                        text-decoration: none;
+                        padding: 10px 30px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        border: none;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: normal;
+                        color: rgba(7,42,41,0.8);
+                        box-shadow: 0 0 12px rgba(7,42,41,1);
+                        background-color: rgba(238,238,238,1);
+                    }
+                    .noVisited{
+                        display: block;
+                        text-decoration: none;
+                        padding: 30px 20px;
+                        font-size: 90%;
+                    }
+                    :hover{
+                        background-color: rgba(7,42,41,1);
+                        color: rgba(238,238,238,1);
+                        font-weight: normal;
+                    }    
+                }
+            }       
+        }    
+    }
+
+    .home_one{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-image: url(/img/entrada1.png);
+        text-align: center;
+        font-size: 30px;
+        color: rgba(238,238,238,0.75);
+        padding: 20% 10% 10% 50%;
+        
+        .botaoInfos{
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: rgba(7,42,41,1);
+            box-shadow: 0 0 12px rgba(7,42,41,1);
+            background-color: rgba(238,238,238,0.75);
+        }
+    }
+    .home_two{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content:space-between;
+        align-items: center;
+
+        .conteiner_resumo{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 33%;
+            background-color: rgba(7,42,41,1);
+            padding: 20px 30px;
+            border-radius: 20px;
+            text-align: center;
+            color: rgb(209, 209, 209);
+
+            .text1{
+                padding-bottom: 20px;
+                ::after{
+                padding-top:10px;
+                content: '↓';
+                display: block;
+                font-weight: 900;
+                font-size: 30px;
+                }
+            }
+            h4{
+                font-weight: 400;
+            }
+        }
+        .conteiner_text{
+            color: rgba(7,42,41,1);
+            width: 66%;
+            padding: 30px;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+        
+            p{
+                font-size: 85%;
+            }
+              
+            .botaoCadastro{
+                text-decoration: none;
+                text-align: center;
+                padding: 20px 80px;
+                font-size: 65%;
+                border-radius: 10px;
+                cursor: pointer;
+                border: none;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                color: rgba(238,238,238,1);
+                box-shadow: 0 0 12px rgba(7,42,41,1);
+                background-color: rgba(7,42,41,1);
+            }
+            
+        }
+    }
+
+    .home_tree{
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+        background-color: rgba(7,42,41,1);
+        color: rgba(238,238,238,1);
+        
+        h2{
+            padding-bottom: 20px;
+            font-size: 40px;
+        }
+        .comunidades{
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            img{
+                border-radius: 100%;
+                width: 100px;
+                box-shadow: 0 0 12px rgba(7,42,41,1);
+            }
+            .com_one{
+                border-radius: 10px;
+                padding: 20px 5px 20px 5px;
+                width: 22%;
+                min-width: 250px;
+                background-color: rgba(238,238,238,0.75);
+                box-shadow: 0 0 6px rgba(238,238,238,0.75);
+                color: rgba(7,42,41,1);
+                    h4{
+                        padding: 10px 0px 10px 0px;
+                    }    
+                    p{
+                        padding: 10px 0px 10px 0px;
+                    }
+
+                }
+            
+
+        }
+    }
+
+    .home_four{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+        background-color: rgba(238,238,238,1);
+        color: rgb(7,42,41);
+
+        .contato{
+            display: flex;
+            
+            .infos{
+                width: 50%;
+                padding: 3vh 3vh;
+                
+                .redes_sociais{
+                    padding-top: 200px;
+                    
+                    img{
+
+                        padding-right: 20px;
+                    }
+                }
+            }
+
+            .forms{
+                border: rgb(7,42,41) solid 1px;
+                border-radius: 10px;
+                padding:20px 20px 20px 20px;
+                width: 50%;
+                text-align: left;
+                margin: 0 auto;
+
+                .forms_unit{
+                    padding-top: 10px;
+                
+                    input{
+                        padding: 5px;
+                        width: 100%;
+                        
+
+                    }
+                    .duvida{
+                        height: 100px;
+                    }
+                }
+                .botao{
+                    padding: 10px 0px 10px 0px;
+                    
+                    button{
+                        padding: 5px 15px 5px 15px;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    footer{
+        background-color: rgba(7,42,41,1);
+        color: rgba(238,238,238,1);
+        padding: 5px;
+        font-size: 70%;
+        width: 100%;
+        
+        p{
+            text-align: right;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+    }
+
+    /* Página Radar e Complementares*/
+ 
+
+    .conteiner{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        .sessao_um{
+            margin: 5px 10px;
+            display: flex;
+            justify-content: center;
+            height: 80px;
+            text-align: center;
+            color: rgb(7,42,41);
+
+            .section_one{
+                margin: 0px 5px;
+                padding: 2px 5px;
+                display: flex;
+                justify-content: space-around;
+                width: 33%;
+                background-color: white;
+                font-size: 140%;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px grey;
+                
+                h6{
+                    color: rgba(7,42,41,0.7);
+                }
+            }
+            .section_two{
+                margin: 0px 5px;
+                padding: 2px 5px;
+                width: 33%;
+                background-color: white;
+                font-size: 160%;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px grey;
+                
+                .bosses{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    position:relative;
+                    
+                
+                    .alo1{
+                        background-color: green;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;   
+                       
+                        .orsha{
+                            margin: 5px 5px;
+                            width: 80%;
+                            height: 80%;
+                            background-color: white;
+                            border-radius: 100%;
+
+
+                            img{
+                                &:hover{
+                                opacity: 0.5;
+                                }
+                            }
+                            &:hover + .orsha_txt{
+                                display: block;
+                                position: relative;
+                                top: 0px;
+                                                                
+                                }
+                                                    
+                        }
+
+                        .orsha_txt{
+                            display: none;
+                            background-color: rgb(238,238,238);
+                            width: 15vh;
+                            font-size: 50%;
+                            padding: 20% 0;
+                            border-radius: 5%;
+                            box-shadow: 0px 0px 8px grey;;
+                        }                            
+                    }
+                    .alo2{
+                        background-color: green;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;
+                        
+                       
+                        .ferumb{
+                            margin: 5px 5px;
+                            width: 80%;
+                            height: 80%;
+                            background-color: white;
+                            border-radius: 100%;
+                            
+                            img{
+                                &:hover{
+                                opacity: 0.5;
+                                }
+                            }
+                            
+                            &:hover + .ferumb_txt{
+                                display: block;
+                                position: relative;
+                                top: 0px;
+                                
+                            }                   
+                        }
+
+                        .ferumb_txt{
+                            display: none;
+                            background-color: rgb(238,238,238);
+                            width: 15vh;
+                            font-size: 50%;
+                            padding: 20% 0;
+                            border-radius: 5%;
+                            box-shadow: 0px 0px 8px grey;;
+                        }
+                    }
+                    .alo3{
+                        background-color: green;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;
+                        
+                        .morg{
+                            margin: 5px 5px;
+                            width: 80%;
+                            height: 80%;
+                            background-color: white;
+                            border-radius: 100%;
+
+                            img{
+                                &:hover{
+                                opacity: 0.5;
+                                }
+                            }
+                            
+                            &:hover + .morg_txt{
+                                display: block;
+                                position: relative;
+                                top: 0px;  
+                            }                   
+                        }
+
+                        .morg_txt{
+                            display: none;
+                            background-color: rgb(238,238,238);
+                            width: 15vh;
+                            font-size: 50%;
+                            padding: 20% 0;
+                            border-radius: 5%;
+                            box-shadow: 0px 0px 8px grey;;
+                        }
+                        
+                    } 
+                    .alo4{
+                        background-color: green;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;                   
+                        
+                        .gaz{
+                            margin: 5px 5px;
+                            width: 80%;
+                            height: 80%;
+                            background-color: white;
+                            border-radius: 100%;
+
+                            img{
+                                &:hover{
+                                opacity: 0.5;
+                                }
+                            }
+                            
+                            &:hover + .gaz_txt{
+                                display: block;
+                                position: relative;
+                                top: 0px;  
+                            }                   
+                        }
+
+                        .gaz_txt{
+                            display: none;
+                            background-color: rgb(238,238,238);
+                            width: 15vh;
+                            font-size: 50%;
+                            padding: 20% 0;
+                            border-radius: 5%;
+                            box-shadow: 0px 0px 8px grey;;
+                        }
+                           
+                    }
+                }
+
+            
+            }
+            .section_three{
+                margin: 0px 5px;
+                padding: 2px 5px;
+                width: 33%;
+                background-color: white;
+                font-size: 160%;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px grey;
+
+                .events{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 40%;
+
+                    .events_one{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                    .events_two{
+                        text-align: center;
+                    }
+                }
+            
+            }
+        }
+
+        .sessao_dois{
+            margin: 5px 10px;
+            display: flex;
+            justify-content: center;
+
+            text-align: center;
+            color: rgb(7,42,41);
+            
+            .lore_one{
+                width: 50%;
+                background-color: white;
+                margin: 5px;
+                height: 400px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px grey;
+                overflow: auto;
+                
+                h3{
+                    padding: 5px;
+                }
+                .table_one{
+                    table-layout: fixed;
+                    width: 100%;
+                    font-size: 90%;
+                    overflow: auto;
+                    
+                    thead{
+                        background-color: rgba(7,42,41,0.5);
+                        th{
+                            padding: 6px 0px
+                        };
+                    }
+                    tbody{
+                        
+                        tr{
+                            .bicho{
+                                .area1{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: green;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }
+                                .area2{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: yellow;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                } 
+                                .area3{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: grey;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }
+                                .area4{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: grey;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }                          
+                            }
+                        }
+                        tr:nth-child(even){
+                            background-color: rgba(7,42,41,0.05);
+                        }
+                    }
+                }
+            }
+
+            .lore_two{
+                width: 50%;
+                background-color: white;
+                margin: 5px;
+                height: 400px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px grey;
+                overflow: auto;
+
+                h3{
+                    padding: 5px;
+                }
+                .table_one{
+                    table-layout: fixed;
+                    width: 100%;
+                    font-size: 90%;
+                    overflow: auto;
+                    
+                    thead{
+                        background-color: rgba(7,42,41,0.5);
+                        th{
+                            padding: 6px 0px
+                        };
+                    }
+                    tbody{
+                        
+                        tr{
+                            .bicho{
+                                .area1{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: green;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }
+                                .area2{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: yellow;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                } 
+                                .area3{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: grey;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }
+                                .area4{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: grey;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }                          
+                            }
+                        }
+                        tr:nth-child(even){
+                            background-color: rgba(7,42,41,0.05);
+                        }
+                    }
+                }
+            
+            }
+
+        }
+
+        .sessao_tres{
+            margin: 5px 10px;
+            display: flex;
+            justify-content: center;
+
+            text-align: center;
+            color: rgb(7,42,41);
+            
+            .lore_one{
+                width: 50%;
+                background-color: white;
+                margin: 5px;
+                height: 400px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px grey;
+                overflow: auto;
+
+                h3{
+                    padding: 5px;
+                }
+                .table_one{
+                    table-layout: fixed;
+                    width: 100%;
+                    font-size: 90%;
+                 
+                    thead{
+                        
+                        background-color: rgba(7,42,41,0.5);
+                        th{
+                            padding: 6px 0px
+                        };
+                    }
+                    tbody{
+                        
+                        tr{
+                            .bicho{
+                                .area1{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: green;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }
+                                .area2{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: yellow;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                } 
+                                .area3{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: grey;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }
+                                .area4{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: grey;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }                          
+                            }
+                        }
+                        tr:nth-child(even){
+                            background-color: rgba(7,42,41,0.05);
+                        }
+                    }
+                }
+            }
+
+            .lore_two{
+                width: 50%;
+                background-color: white;
+                margin: 5px;
+                height: 400px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px grey;
+                overflow: auto;
+
+                h3{
+                    padding: 5px;
+                }
+                .table_one{
+                    table-layout: fixed;
+                    width: 100%;
+                    font-size: 90%;
+                    overflow: auto;
+                    
+                    thead{
+                        background-color: rgba(7,42,41,0.5);
+                        th{
+                            padding: 6px 0px
+                        };
+                    }
+                    tbody{
+                        
+                        tr{
+                            .bicho{
+                                .area1{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: green;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }
+                                .area2{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: yellow;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                } 
+                                .area3{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: grey;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }
+                                .area4{
+                                    margin: 0px 45px;
+                                    padding: 5px 5px;
+                                    border-radius: 50px;
+                                    background-color: grey;
+
+                                    .area_in{
+                                        padding: 3px 3px;
+                                        border-radius: 50px;
+                                        background-color: white;
+                                    }
+                                }                          
+                            }
+                        }
+                        tr:nth-child(even){
+                            background-color: rgba(7,42,41,0.05);
+                        }
+                    }
+                }
+            
+            }
+
+        }
+
+        .sessao_doisdois{
+            .section_one{
+                margin: 5px 15px;
+                justify-content: center;
+                text-align: center;
+                color: rgb(7,42,41);
+                background-color: white;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px grey;
+                height: 100%;
+                padding: 10px 0px;
+                
+                table{
+                    padding: 10px 0px;
+                    table-layout: fixed;
+                    width: 100%;
+                    font-size: 80%;
+                    
+                    .prev{
+                        font-size: 90%;
+                    }
+                    thead{
+                        background-color: rgba(7,42,41,0.5);
+                        th{
+                            padding: 6px 0px
+                        };
+                    }
+                    tbody{
+                        
+                        tr{
+                            .bicho{
+                                .area1{
+                                    margin: auto;
+                                    padding: 4px 4px;
+                                    border-radius: 50px;
+                                    width: 40%;
+                                    background-color: green;
+
+                                    .area_in{
+                                        padding: 4px 4px;
+                                        border-radius: 50px;
+                                        width: 100%;                
+                                        background-color: white;
+                                    }
+                                }
+                            }
+                        } 
+                           
+                        tr:nth-child(even){
+                        background-color: rgba(7,42,41,0.1);
+                        }
+                        
+                    }
+                }
+                
+            }
+        } 
+        
+        .sessao_cum{
+            margin: 5px 15px;
+            color: rgb(7,42,41);
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px grey;
+            height: 75vh;       
+
+            .horiz_one{
+                display: flex;
+                padding: 10px 0px;
+                justify-content: center;
+                text-align: center;
+                
+                .one{
+                    margin: auto;
+                    padding: 10px 0px;
+                    width: 20%;
+                    height: 15vh;
+                                        
+                }
+                .two{
+                    margin: auto;
+                    padding: 10px 0px;
+                    width: 70%;
+                    height: 20vh;
+                    
+                    .caract{
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 20px 0px;
+                        .ind_one{
+                            padding: 0px 20px;
+                        }
+                        .ind_two{
+                            padding: 0px 20px;
+                        }
+                        .ind_three{
+                            padding: 0px 20px;
+                        }
+                        .ind_four{
+                            padding: 0px 20px;
+                        }
+                        .ind_five{
+                            padding: 0px 20px;
+                        }
+                        .ind_six{
+                            padding: 0px 20px;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+
+}            

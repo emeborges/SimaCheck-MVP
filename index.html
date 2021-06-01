@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua bússula dos bosses | SimaCheck </title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <header class="nav_home page_index">
+        <div class="menu"> 
+            <nav>
+                <ul class="left_menu">
+                    <li>
+                    <a href="#inicio" class="visited">Home</a>
+                    </li>
+                    <li>
+                        <a href="#comoFunciona" class="noVisited">Como Funciona</a>
+                    </li>
+                    <li>
+                        <a href="#comunit"class="noVisited">Comunidade</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="/img/Logo.png" height=50px class="logotipo"> <!-- -->
+            <nav>
+                <ul class="right_menu">
+                    <li class="botaoEntrar">
+                        <button id="entrar">ENTRAR</button>
+                    </li>
+                    <li>
+                        <a href="" class="noVisited">Cadastrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <section class="home_one paralax" id="inicio">
+        
+        <h2>SEU BOSS HUNT NUNCA MAIS SERÁ O MESMO..</h2>
+        <button onclick=window.location.href='#comoFunciona' class="botaoInfos">SAIBA MAIS</button>
+    </section>
+    <section class="home_two" id="comoFunciona">
+        
+        <div class="conteiner_text">
+            <h2>COMO FUNCIONA</h2> 
+            <p>Após mais de 15 anos de experiência no jogo, distribuídos em todos os objetivos como jogador possível, desde Leveis Up, Dominantes e até Char Lovers, chegamos ao mundo da Boss Hunter, o que nos proporcionou uma série de dificuldades por informações equivocadas e incorretas sobre as nossas metas. </p>
+            <br>
+        
+            <p>Decidimos então, buscar entender todos os mecanismos por trás das mecânicas e aparecimentos de cada Boss, com isso, construímos nossa ferramenta, capaz de analisar, projetar e acompanhar o aparecimento dos Bosses em todos os mundos tibianos.
+            </p>
+            <br>
+                <button class="botaoCadastro" >CADASTRE-SE JÁ</button>
+        </div>
+        <div class="conteiner_resumo">
+            <div class="text1">
+                <img src="/img/radar.svg" alt="rastreio" height="80px">
+                <h4>Rastreamos os aparecimentos dos Bosses</h4>
+            </div>
+            <div class="text1">
+                <img src="/img/previsao.svg" alt="previsao" height="80px">
+                <h4>Compilamos e analisamos os dados</h4>
+            </div>
+            <div class="text2">
+                <img src="/img/calendario.svg" alt="calendario" height="80px">
+                <h4>Desenhamos uma previsão com as reais chances de reaparecimento de cada Boss.</h4>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="home_tree" id="comunit">
+
+        <div class="titulo_sessao">
+            <h2>COMUNIDADES PARCEIRAS</h2>
+        </div>
+        <div class="comunidades">
+            <div class="com_one">
+                <a href="www.guildwalhalla.com.br"><img src="/img/walhalla.png" alt="walhalla" srcset=""></a>
+                <h4>Guilda Walhala</h4>
+                <p>A guilda Walhala está presente no servidor de Kalibra e com mais de seus 85 players é um membro importantíssimo desta plataforma.</p>
+
+            </div>
+            <div class="com_one">
+                <a href="https://www.twitch.tv/libosi_"><img src="/img/libosi.jpg" alt="libosi" srcset=""></a>
+                <h4>Libosi</h4>
+                <p>Com todo apoio de seus mais de 20 mil seguideores na Twitch, a comunidade do streamer Libosi faz parte desde a fundação do SimaCheck.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="home_four">
+        <h2>CONTATO</h2>
+        <div class="contato">
+            <div class="infos">
+                <p>Para maiores informações, entre em contato através de nossas redes sociais ou através do nosso formulário.</p>
+                <div class="redes_sociais">
+                    <a href="" target="_blank"><img src="/img/whats.svg" alt="" srcset="" width="60px"></a>
+                    <a href="" target="_blank"><img src="/img/insta.svg" alt="" srcset="" width="60px"></a>
+                    <a href="" target="_blank"><img src="/img/facebook.svg" alt="" srcset="" width="60px"></a>
+                </div>
+            </div>
+            <div class="forms">
+                <form action="">
+                    <div class="forms_unit">
+                        <label for="fnome">Nome:</label><br>
+                        <input type="text" placeholder="Digite o seu nome."><br>
+                    </div>
+                    <div class="forms_unit">
+                        <label for="femail">E-mail:</label><br>
+                        <input type="email" placeholder="Digite o seu e-mail."><br>
+                    </div>
+                    <div class="forms_unit">
+                        <label for="ftel">Telefone:</label><br>
+                        <input type="tel" placeholder="Digite o seu número de WhatsApp."><br>
+                    </div>
+                    <div class="forms_unit">
+                        <label for="fduvida">Dúvida:</label><br>
+                        <input type="text" placeholder="Digite a sua dúvida." class="duvida"><br>
+                    </div>
+                    <div class="botao">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>©️ Simacheck.com.br 2021, all rights reserved. Tibia and TibiaME are trademarks of CipSoft GmbH.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
