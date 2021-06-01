@@ -1,5 +1,5 @@
-
-const menuItens = document.querySelectorAll('.left_menu a')
+//Efeito de rolagem lenta Links Menu, home
+const menuItens = document.querySelectorAll('.left_menu a') // Click e direcionamento suave para o resto da tela.
 
 function scrollToIdOnClick(){
     event.preventDefault(); // Tira o evento padrão do Click! 
@@ -16,3 +16,19 @@ function scrollToIdOnClick(){
 menuItens.forEach(item =>{ 
     item.addEventListener('click', scrollToIdOnClick) // Adicinando o evento de clic novamente
 })
+
+//Efeito de rolagem lenta, botão Home One 
+
+
+
+function test (){
+    const referenciaTo = document.querySelector('#comoFunciona').offsetTop;
+    const rept = window.scroll({
+                    top: referenciaTo - 80,
+                    behavior: "smooth",
+                    });
+
+    buttonHomeComoFunc.addEventListener('click', rept)
+    
+}
+
