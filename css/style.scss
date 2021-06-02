@@ -322,7 +322,7 @@ body{
 
     /* Página Radar e Complementares*/
  
-
+    
     .conteiner{
         width: 100%;
         max-width: 1200px;
@@ -1031,4 +1031,40 @@ body{
        
     }
 
-}            
+    /* Página de Seleção */
+    .conteiner_selection{
+        width: 80%;
+        height: 80vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .selection_word{
+            height: 60vh;
+            padding: 10px 10px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 4%;
+            align-items: center;
+            width: 40%;
+            background-color: rgb(238,238,238);
+            
+        }
+        .infos_basic{
+            margin-left: 5px;
+            height: 60vh;
+            width: 60%;
+            background-color: rgb(238,238,238);
+        }
+    }
+
+
+
+
+}
+
+    /* Fundo Página de Perfil*/
+.block{
+    background-image: url(/img/home1.png);
+}   

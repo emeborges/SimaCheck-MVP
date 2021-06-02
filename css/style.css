@@ -26,6 +26,7 @@ body {
   margin: 0 auto;
   /* Página Home*/
   /* Página Radar e Complementares*/
+  /* Página de Seleção */
 }
 
 body .page_index {
@@ -1096,5 +1097,50 @@ body .conteiner .sessao_cum .horiz_one .two .caract .ind_five {
 
 body .conteiner .sessao_cum .horiz_one .two .caract .ind_six {
   padding: 0px 20px;
+}
+
+body .conteiner_selection {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .conteiner_selection .selection_word {
+  height: 60vh;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 4%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  background-color: #eeeeee;
+}
+
+body .conteiner_selection .infos_basic {
+  margin-left: 5px;
+  height: 60vh;
+  width: 60%;
+  background-color: #eeeeee;
+}
+
+/* Fundo Página de Perfil*/
+.block {
+  background-image: url(/img/home1.png);
 }
 /*# sourceMappingURL=style.css.map */

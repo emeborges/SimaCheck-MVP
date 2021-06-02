@@ -19,8 +19,6 @@ menuItens.forEach(item =>{
 
 //Efeito de rolagem lenta, botão Home One 
 
-
-
 function test (){
     const referenciaTo = document.querySelector('#comoFunciona').offsetTop;
     const rept = window.scroll({
