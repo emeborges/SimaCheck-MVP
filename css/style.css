@@ -1129,14 +1129,87 @@ body .conteiner_selection .selection_word {
       -ms-flex-align: center;
           align-items: center;
   width: 40%;
+  background-color: rgba(238, 238, 238, 0.7);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .conteiner_selection .selection_word form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .conteiner_selection .selection_word form select {
+  margin-bottom: 10px;
+  padding: 0.3vw 20vh;
+  outline: 0;
+  border: 0 !important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body .conteiner_selection .selection_word form input {
+  display: block;
+  text-decoration: none;
+  padding: 0.3vw 20vh;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: rgba(7, 42, 41, 0.8);
+  -webkit-box-shadow: 0 0 3px #072a29;
+          box-shadow: 0 0 3px #072a29;
   background-color: #eeeeee;
 }
 
 body .conteiner_selection .infos_basic {
+  padding: 0px 0px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 4%;
   margin-left: 5px;
   height: 60vh;
   width: 60%;
-  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+body .conteiner_selection .infos_basic .client_infos {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px 20px 0px;
+}
+
+body .conteiner_selection .infos_basic .client_obs {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px 20px 0px;
+}
+
+body .conteiner_selection .infos_basic .client_obs a {
+  text-decoration: none;
+  color: rgba(7, 42, 41, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* Fundo Página de Perfil*/

@@ -19,7 +19,7 @@ menuItens.forEach(item =>{
 
 //Efeito de rolagem lenta, botão Home One 
 
-function test (){
+function rolagemSuave (){
     const referenciaTo = document.querySelector('#comoFunciona').offsetTop;
     const rept = window.scroll({
                     top: referenciaTo - 80,
@@ -27,6 +27,11 @@ function test (){
                     });
 
     buttonHomeComoFunc.addEventListener('click', rept)
-    
 }
+
+//Funcoes de Direcionamento Para Outras Pages
+function redirecionamentoFilter (){
+    window.location.href = 'filter.html';
+}
+
 
