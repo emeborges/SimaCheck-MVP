@@ -1100,12 +1100,12 @@ body .conteiner .sessao_cum .horiz_one .two .caract .ind_six {
 }
 
 body .conteiner_selection {
-  width: 80%;
-  height: 80vh;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 97vh;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1115,7 +1115,8 @@ body .conteiner_selection {
 }
 
 body .conteiner_selection .selection_word {
-  height: 60vh;
+  height: 25vh;
+  min-height: 25vh;
   padding: 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1124,17 +1125,20 @@ body .conteiner_selection .selection_word {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 4%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
+  width: 60vh;
+  min-width: 60vh;
   background-color: rgba(238, 238, 238, 0.7);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  text-align: center;
 }
 
 body .conteiner_selection .selection_word form {
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,21 +1146,26 @@ body .conteiner_selection .selection_word form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body .conteiner_selection .selection_word form select {
-  margin-bottom: 10px;
-  padding: 0.3vw 20vh;
+  padding: 0.4vw 15vh;
   outline: 0;
   border: 0 !important;
   cursor: pointer;
   border-radius: 5px;
 }
 
+body .conteiner_selection .selection_word form select option {
+  text-align: center;
+}
+
 body .conteiner_selection .selection_word form input {
-  display: block;
   text-decoration: none;
-  padding: 0.3vw 20vh;
+  text-align: center;
+  padding: 0.4vw;
   border-radius: 5px;
   cursor: pointer;
   border: none;
@@ -1168,52 +1177,16 @@ body .conteiner_selection .selection_word form input {
   background-color: #eeeeee;
 }
 
-body .conteiner_selection .infos_basic {
-  padding: 0px 0px 20px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-radius: 4%;
-  margin-left: 5px;
-  height: 60vh;
-  width: 60%;
-  background-color: rgba(238, 238, 238, 0.7);
-}
-
-body .conteiner_selection .infos_basic .client_infos {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0px 0px 20px 0px;
-}
-
-body .conteiner_selection .infos_basic .client_obs {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0px 0px 20px 0px;
-}
-
-body .conteiner_selection .infos_basic .client_obs a {
-  text-decoration: none;
-  color: rgba(7, 42, 41, 0.85);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+body .conteiner_selection .selection_word form a {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(7, 42, 41, 0.8);
+  font-size: 80%;
 }
 
 /* Fundo Página de Perfil*/
 .block {
   background-image: url(/img/home1.png);
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

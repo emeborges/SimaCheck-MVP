@@ -11,32 +11,24 @@
     <div class="conteiner">
         <section class="conteiner_selection">
             <div class="selection_word">
-                <h3>Selecione o Mundo Desejado</h3>
+                <h3>SELECIONE O MUNDO DESEJADO</h3>
                 <form method = "POST" action="">
-                    <select name="word" id="" >
-                        <option value="">Tenebra</option>
-                        <option value="">Calmera</option>
+                    <select name="word" id="selectWord">
+                        <option value="" default>Selecione o mundo desejado</option>
+                        <option value="tenebra">Tenebra</option>
+                        <option value="calmera">Calmera</option>
                     </select>
-                    <input type="button" value="Selecionar" id="sendFilterMundo">
+                    <input type="button" value="Selecionar" id="sendFilterMundo" onclick="redirecionamentoRadar()">
+                    <a href="index.html">Voltar ao Home</a>
                 </form>
             </div>
-            <div class="infos_basic">
-                <div class="client_infos">
-                    <h5>Nome: </h5>
-                    <h5>CPF: </h5>
-                    <h5>Status de Assinatura: </h5>
-                    <h5>Nome: </h5>
-                </div>
-                <div class="client_obs">
-                    <a href="">Alterar Cadastro</a>
-                    <a href="">Alterar Assinatura</a>
-                    <a href="">Mudar Senha</a>
-
-                </div>
-            </div>
-
         </section>
 
     </div>
+    <footer>
+        <p>©️ Simacheck.com.br 2021, all rights reserved. Tibia and TibiaME are trademarks of CipSoft GmbH.</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
+
 </html>

@@ -1033,42 +1033,53 @@ body{
 
     /* Página de Seleção */
     .conteiner_selection{
-        width: 80%;
-        height: 80vh;
-        margin: 0 auto;
         display: flex;
+        width: 100%;
+        height: 97vh;
+        margin: 0 auto;
         align-items: center;
         justify-content: center;
 
 
         .selection_word{
-            height: 60vh;
+            height: 25vh;
+            min-height: 25vh;
             padding: 10px 10px;
             display: flex;
             flex-direction: column;
-            border-radius: 4%;
-            align-items: center;
-            width: 40%;
-            background-color: rgba(238,238,238,0.7);
             justify-content: space-around;
+            border-radius: 10px;
+            align-items: center;
+            width: 60vh;
+            min-width: 60vh;
+            background-color: rgba(238,238,238,0.7);
+            text-align: center;
+          
 
             form{
+                height: 60%;
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
+                
                
                 select{
-                    margin-bottom: 10px;
-                    padding: 0.3vw 20vh;
+                    padding: 0.4vw 15vh;
                     outline: 0;
-                    border: 0!important;
+                    border: 0 !important;
                     cursor: pointer;
                     border-radius: 5px;
+                
+                    option{
+                        text-align: center;
+                    }
+                    
                 }
 
                 input{
-                    display: block;
                     text-decoration: none;
-                    padding: 0.3vw 20vh;
+                    text-align: center;
+                    padding: 0.4vw;
                     border-radius: 5px;
                     cursor: pointer;
                     border: none;
@@ -1078,38 +1089,16 @@ body{
                     box-shadow: 0 0 3px rgba(7,42,41,1);
                     background-color: rgba(238,238,238,1);
                 }
+                a{
+                    text-align: center;
+                    font-family: 'Roboto', sans-serif;
+                    color: rgba(7,42,41,0.8);
+                    font-size: 80%;
+
+                }
             }
             
 
-        }
-        .infos_basic{
-            padding: 0px 0px 20px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            border-radius: 4%;
-            margin-left: 5px;
-            height: 60vh;
-            width: 60%;
-            background-color: rgba(238,238,238,0.7);
-            
-            .client_infos{
-                justify-content: space-between;
-                padding: 0px 0px 20px 0px;
-            }
-            
-            .client_obs{
-                justify-content: space-between;
-                padding: 0px 0px 20px 0px;
-            
-                a{
-                    text-decoration: none;
-                    color:rgba(7,42,41,0.85);
-                    display: flex;
-                    flex-direction: column;
-                };
-            }
-            
         }
     }
 }
@@ -1117,4 +1106,5 @@ body{
     /* Fundo Página de Perfil*/
 .block{
     background-image: url(/img/home1.png);
+    background-size: cover;
 }   

@@ -32,6 +32,15 @@ function rolagemSuave (){
 //Funcoes de Direcionamento Para Outras Pages
 function redirecionamentoFilter (){
     window.location.href = 'filter.html';
+} // redirecionamento do index para a selecao
+
+function redirecionamentoRadar (){
+    const mundoselecionado = document.querySelector("#selectWord").value
+    const localMundo = document.querySelector(".mundo")
+
+    if(mundoselecionado === ""){
+        alert("Selecione o Mundo desejado")
+    } else {
+        window.location.href = 'radar.html'
+    }
 }
-
-
