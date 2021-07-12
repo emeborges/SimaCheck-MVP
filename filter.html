@@ -12,13 +12,13 @@
         <section class="conteiner_selection">
             <div class="selection_word">
                 <h3>SELECIONE O MUNDO DESEJADO</h3>
-                <form method = "POST" action="">
-                    <select name="word" id="selectWord">
+                <form class="selectWord">
+                    <select name="word" id="filtersMundo">
                         <option value="" default>Selecione o mundo desejado</option>
                         <option value="Tenebra">Tenebra</option>
                         <option value="Calmera">Calmera</option>
                     </select>
-                    <input type="button" value="Selecionar" id="sendFilterMundo" onclick="Main.Events.btnFilter_onclick()">
+                    <input type="button" value="Selecionar" id="sendFilterMundo" onclick="checkInput()">
                     <a href="index.html">Voltar ao Home</a>
                 </form>
             </div>
