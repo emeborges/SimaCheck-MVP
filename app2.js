@@ -1,5 +1,6 @@
 //Variáveis utilizadas
     const $btn_filter = document.querySelector("#sendFilterMundo")
+    const $select = document.querySelector("#verification")
 
 
 
@@ -9,6 +10,7 @@ function checkInput(){
     localStorage.setItem('mundo', $mundoSelected)
 
             if($mundoSelected === ""){
+                $select.classList.add(".nopreench")
                 alert("Selecione o Mundo desejado")
             } else {
                 window.location.href = 'radar.html'

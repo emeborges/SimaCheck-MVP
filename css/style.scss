@@ -1031,7 +1031,7 @@ body{
        
     }
 
-    /* Página de Seleção */
+    /* Página de Filtrar */
     .conteiner_selection{
         display: flex;
         width: 100%;
@@ -1095,6 +1095,10 @@ body{
                     color: rgba(7,42,41,0.8);
                     font-size: 80%;
 
+                }
+
+                .nopreench{
+                    border: solid 10px red;
                 }
             }
             

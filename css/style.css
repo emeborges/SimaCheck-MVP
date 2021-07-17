@@ -26,7 +26,7 @@ body {
   margin: 0 auto;
   /* Página Home*/
   /* Página Radar e Complementares*/
-  /* Página de Seleção */
+  /* Página de Filtrar */
 }
 
 body .page_index {
@@ -1182,6 +1182,10 @@ body .conteiner_selection .selection_word form a {
   font-family: 'Roboto', sans-serif;
   color: rgba(7, 42, 41, 0.8);
   font-size: 80%;
+}
+
+body .conteiner_selection .selection_word form .nopreench {
+  border: solid 10px red;
 }
 
 /* Fundo Página de Perfil*/
