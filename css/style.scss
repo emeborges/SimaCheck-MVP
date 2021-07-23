@@ -1,24 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    ::selection{
-       background-color: rgba(7,42,41,0.65);
-    }
+@import 'base';
+@import 'variables';
 
-    &:visited{
-        text-transform: none;
-        color: rgb(238,238,238);
-    }
-}
 
 /* Página Radar e Complementares*/
-body{
-    background-color: rgb(238,238,238);
-    margin: 0 auto;
 
-    /* Página Home*/
+/* Página Home*/
     .page_index{
         position: fixed;
     }
@@ -27,21 +13,22 @@ body{
         background-attachment: fixed;
     }
     .nav_home{
-        background-color: rgba(7,42,41,0.65);
-        box-shadow: 0 0 2vh rgba(7,42,41,1);
+        background-color: $cor-secundaria-opc;
+        box-shadow: 0 0 2vh $cor-secundaria-opc;
         width: 100%;
-        height: 80px;
+        height: 5rem;
         margin: 0 center;
 
         
 
         .menu{
         display: flex;
-        max-width: 1200px;
+        max-width: 75rem;
         margin: 0 auto;
         justify-content:space-between;
         align-items: center;
         padding-top: 0px;
+        font-weight: 400;
         
         
   
@@ -53,29 +40,25 @@ body{
 
                 li{
                     position: relative;
-                    
-                    .visited{
-                        display: block;
-                        text-decoration: none;
-                        padding: 30px 20px;
-                        background-color: rgba(238,238,238,1);
-                        color:rgba(7,42,41,1);
+                
 
                     }
                     :hover{
-                        background-color: rgba(7,42,41,1);
-                        color: rgba(238,238,238,1);
+                        background-color: $cor-primaria;
+                        color: $cor-secundaria;
                     }    
                     
-                    .noVisited{
+                    a{
                         display: block;
                         text-decoration: none;
-                        padding: 30px 20px;
+                        padding: 1.875rem 1.25rem;
+
+                        :visited{
+                            color:black;
+                        }
 
                     }
-                    :hover{
-                        background-color: rgba(7,42,41,1);
-                    }  
+                    
                 }
             }
 
@@ -85,25 +68,30 @@ body{
                 list-style: none;
 
                 .botaoEntrar{
-                    padding-top: 20px;
-                }
-                li{
-                    position: relative;
-                    
+                    padding-top: 1.25rem;
 
                     button{
                         display: block;
                         text-decoration: none;
-                        padding: 10px 30px;
-                        border-radius: 10px;
+                        padding: 0.625rem 1.875rem;
+                        border-radius: 0.625rem;
                         cursor: pointer;
                         border: none;
                         font-family: 'Roboto', sans-serif;
-                        font-weight: normal;
-                        color: rgba(7,42,41,0.8);
-                        box-shadow: 0 0 12px rgba(7,42,41,1);
-                        background-color: rgba(238,238,238,1);
+                        font-weight: bold;
+                        color: $cor-secundaria;
+                        box-shadow: 0 0 0.875rem $sombra-clara;
+                        background-color: $cor-primaria;
                     }
+                    :hover{
+                        background-color: $cor-secundaria;
+                        color: $cor-primaria;
+                    }
+                }
+
+                li{
+                    position: relative;
+                                        
                     .noVisited{
                         display: block;
                         text-decoration: none;
@@ -111,14 +99,13 @@ body{
                         font-size: 90%;
                     }
                     :hover{
-                        background-color: rgba(7,42,41,1);
-                        color: rgba(238,238,238,1);
-                        font-weight: normal;
+                        background-color: $cor-primaria;
+                        color: $cor-secundaria;
                     }    
                 }
             }       
         }    
-    }
+    
 
     .home_one{
         width: 100%;
@@ -126,14 +113,15 @@ body{
         background-size: cover;
         background-image: url(/img/entrada1.png);
         text-align: center;
-        font-size: 30px;
-        color: rgba(238,238,238,0.75);
+        font-size: 1.875rem;
+        color: $text-primario;
         padding: 20% 10% 10% 50%;
         
         .botaoInfos{
             text-decoration: none;
-            padding: 10px 30px;
-            border-radius: 10px;
+            padding: 0.625rem 2.5rem;
+            border-radius: 0.625rem;
+            font-size: 70%;
             cursor: pointer;
             border: none;
             font-family: 'Roboto', sans-serif;
@@ -149,25 +137,26 @@ body{
         margin: 0 auto;
         justify-content:space-between;
         align-items: center;
+        color:black;
 
         .conteiner_resumo{
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
             width: 33%;
-            background-color: rgba(7,42,41,1);
-            padding: 20px 30px;
-            border-radius: 20px;
+            background-color: $cor-secundaria;
+            padding: 1.25rem 1.875rem;
+            border-radius: 1.25rem;
             text-align: center;
-            color: rgb(209, 209, 209);
+            color: $cor-primaria;
 
             .text1{
-                padding-bottom: 20px;
+                padding-bottom: 1.25rem;
                 ::after{
-                padding-top:10px;
+                padding-top:0.625rem;
                 content: '↓';
                 display: block;
                 font-weight: 900;
-                font-size: 30px;
+                font-size: 1.875rem;
                 }
             }
             h4{
@@ -175,11 +164,11 @@ body{
             }
         }
         .conteiner_text{
-            color: rgba(7,42,41,1);
+            color: $cor-secundaria;
             width: 66%;
-            padding: 30px;
-            font-size: 24px;
-            line-height: 40px;
+            padding: 1.875rem;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
             text-align: center;
         
             p{
@@ -189,26 +178,26 @@ body{
             .botaoCadastro{
                 text-decoration: none;
                 text-align: center;
-                padding: 20px 80px;
+                padding: 1.25rem 5rem;
                 font-size: 65%;
-                border-radius: 10px;
+                border-radius: 0.625rem;
                 cursor: pointer;
                 border: none;
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
-                color: rgba(238,238,238,1);
-                box-shadow: 0 0 12px rgba(7,42,41,1);
-                background-color: rgba(7,42,41,1);
+                color: $cor-primaria;
+                box-shadow: 0 0 12px  $cor-secundaria;
+                background-color:  $cor-secundaria;
             }
             
         }
     }
 
     .home_tree{
-        padding: 20px 0px 20px 0px;
+        padding: 1.25rem 0rem 1.25rem 0rem;
         text-align: center;
-        background-color: rgba(7,42,41,1);
-        color: rgba(238,238,238,1);
+        background-color: $cor-secundaria;
+        color: $cor-primaria;
         
         h2{
             padding-bottom: 20px;
@@ -1105,7 +1094,7 @@ body{
 
         }
     }
-}
+
 
     /* Fundo Página de Perfil*/
 .block{
