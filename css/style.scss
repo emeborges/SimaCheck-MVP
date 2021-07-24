@@ -9,9 +9,7 @@
         position: fixed;
     }
 
-    .paralax{
-        background-attachment: fixed;
-    }
+    
     .nav_home{
         background-color: $cor-secundaria-opc;
         box-shadow: 0 0 2vh $cor-secundaria-opc;
@@ -54,7 +52,8 @@
                         padding: 1.875rem 1.25rem;
 
                         :visited{
-                            color:black;
+                            text-decoration: none;
+                            color:$cor-primaria;
                         }
 
                     }
@@ -104,31 +103,41 @@
                     }    
                 }
             }       
-        }    
-    
+        }   
+
+    .paralax{
+        background-attachment: fixed;
+    }
 
     .home_one{
         width: 100%;
         height: 100vh;
         background-size: cover;
         background-image: url(/img/entrada1.png);
-        text-align: center;
-        font-size: 1.875rem;
-        color: $text-primario;
-        padding: 20% 10% 10% 50%;
         
-        .botaoInfos{
-            text-decoration: none;
-            padding: 0.625rem 2.5rem;
-            border-radius: 0.625rem;
-            font-size: 70%;
-            cursor: pointer;
-            border: none;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            color: rgba(7,42,41,1);
-            box-shadow: 0 0 12px rgba(7,42,41,1);
-            background-color: rgba(238,238,238,0.75);
+        
+        .dadosUm{
+            text-align: center;
+            font-size: 1.875rem;
+            color: $text-primario;
+            padding-top: 18%;
+            margin: 0 auto;
+
+
+        
+            .botaoInfos{
+                text-decoration: none;
+                padding: 0.625rem 2.5rem;
+                border-radius: 0.625rem;
+                font-size: 70%;
+                cursor: pointer;
+                border: none;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                color: rgba(7,42,41,1);
+                box-shadow: 0 0 12px $cor-secundaria;
+                background-color: $cor-primaria-opc;
+            }
         }
     }
     .home_two{
@@ -200,29 +209,37 @@
         color: $cor-primaria;
         
         h2{
-            padding-bottom: 20px;
-            font-size: 40px;
+            width: 35rem;
+            margin: 0 auto;
+            font-size: 2.5rem;
+            background-color:$cor-primaria-opc;
+            border-radius: 0.625rem;
+            color: $cor-secundaria;
         }
         .comunidades{
+            padding-top: 1rem; 
             display: flex;
             justify-content: space-around;
-            max-width: 1200px;
+            max-width: 75rem;
             margin: 0 auto;
 
             img{
                 border-radius: 100%;
-                width: 100px;
-                box-shadow: 0 0 12px rgba(7,42,41,1);
+                width: 6.25rem;
+                box-shadow: 0 0 0.75rem $cor-secundaria;
             }
             .com_one{
-                border-radius: 10px;
-                padding: 20px 5px 20px 5px;
+                border-radius: 0.625rem;
+                padding: 1.25rem 5px 1.25rem 5px;
                 width: 22%;
                 min-width: 250px;
-                background-color: rgba(238,238,238,0.75);
-                box-shadow: 0 0 6px rgba(238,238,238,0.75);
-                color: rgba(7,42,41,1);
+                background-color: $cor-primaria-opc-ii;
+                box-shadow: 0 0 5px $sombra-escura;
+                color: $cor-secundaria;
                     h4{
+                        background-color: $cor-secundaria;
+                        color:$cor-primaria;
+                        
                         padding: 10px 0px 10px 0px;
                     }    
                     p{
