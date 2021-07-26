@@ -53,6 +53,7 @@ body {
   display: block;
   text-decoration: none;
   padding: 1.875rem 1.25rem;
+  color: #f7f7f7;
 }
 .nav_home .menu .left_menu a :visited {
   text-decoration: none;
@@ -114,7 +115,11 @@ body {
   padding-top: 18%;
   margin: 0 auto;
 }
+.home_one .dadosUm h2 {
+  font-size: 130%;
+}
 .home_one .dadosUm .botaoInfos {
+  margin-top: 0.625rem;
   text-decoration: none;
   padding: 0.625rem 2.5rem;
   border-radius: 0.625rem;
@@ -213,118 +218,99 @@ body {
 }
 .home_tree .comunidades .com_one {
   border-radius: 0.625rem;
-  padding: 1.25rem 5px 1.25rem 5px;
+  padding: 1.25rem 0.313rem 1.25rem 0.313rem;
   width: 22%;
-  min-width: 250px;
+  min-width: 15.625rem;
   background-color: rgba(247, 247, 247, 0.9);
-  box-shadow: 0 0 5px rgba(19, 28, 33, 0.6);
+  box-shadow: 0 0 0.313rem rgba(19, 28, 33, 0.6);
   color: #131c21;
 }
 .home_tree .comunidades .com_one h4 {
   background-color: #131c21;
   color: #f7f7f7;
-  padding: 10px 0px 10px 0px;
+  padding: 0.625rem 0rem 0.625rem 0rem;
 }
 .home_tree .comunidades .com_one p {
-  padding: 10px 0px 10px 0px;
+  padding: 0.625rem 0rem 0.625rem 0rem;
 }
 
 .home_four {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0px 20px 0px;
-  text-align: center;
-  background-color: #eeeeee;
-  color: #072a29;
-}
-.home_four .contato {
-  display: flex;
-}
-.home_four .contato .infos {
-  width: 50%;
-  padding: 3vh 3vh;
-}
-.home_four .contato .infos .redes_sociais {
-  padding-top: 200px;
-}
-.home_four .contato .infos .redes_sociais img {
-  padding-right: 20px;
-}
-.home_four .contato .forms {
-  border: #072a29 solid 1px;
-  border-radius: 10px;
-  padding: 20px 20px 20px 20px;
-  width: 50%;
-  text-align: left;
-  margin: 0 auto;
-}
-.home_four .contato .forms .forms_unit {
-  padding-top: 10px;
-}
-.home_four .contato .forms .forms_unit input {
-  padding: 5px;
   width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem 0rem 1.25rem 0rem;
+  text-align: center;
+  background-color: #f7f7f7;
+  color: #131c21;
+  font-size: 1.5rem;
 }
-.home_four .contato .forms .forms_unit .duvida {
-  height: 100px;
+.home_four h2 {
+  margin: 1rem 0rem 1rem 0rem;
+  background-color: #131c21;
+  color: #f7f7f7;
 }
-.home_four .contato .forms .botao {
-  padding: 10px 0px 10px 0px;
+.home_four .swiper-container {
+  max-width: 60rem;
+  max-height: 30rem;
 }
-.home_four .contato .forms .botao button {
-  padding: 5px 15px 5px 15px;
+.home_four .swiper-container img {
+  max-width: 60rem;
+  max-height: 30rem;
+  padding: 0rem 5rem 0rem 5rem;
+}
+.home_four .swiper-container .swiper-button-next, .home_four .swiper-container .swiper-button-prev {
+  color: #131c21;
 }
 
 footer {
-  background-color: #072a29;
-  color: #eeeeee;
-  padding: 5px;
-  font-size: 70%;
+  background-color: #131c21;
+  color: #f7f7f7;
+  padding: 0.313rem;
+  font-size: 0.7rem;
   width: 100%;
 }
 footer p {
   text-align: right;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 75rem;
 }
 
 /* Página Radar e Complementares*/
 .conteiner {
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 .conteiner .sessao_um {
-  margin: 5px 10px;
+  margin: 0.313rem 0.625rem;
   display: flex;
   justify-content: center;
-  height: 80px;
+  height: 5rem;
   text-align: center;
-  color: #072a29;
+  color: #131c21;
 }
 .conteiner .sessao_um .section_one {
-  margin: 0px 5px;
-  padding: 2px 5px;
+  margin: 0px 0.313rem;
+  padding: 0.125rem 0.313rem;
   display: flex;
   justify-content: space-around;
   width: 33%;
   background-color: white;
   font-size: 140%;
   align-items: center;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px grey;
+  border-radius: 0.313rem;
+  box-shadow: 0px 0px 0.5rem grey;
 }
 .conteiner .sessao_um .section_one h6 {
-  color: rgba(7, 42, 41, 0.7);
+  color: rgba(19, 28, 33, 0.8);
 }
 .conteiner .sessao_um .section_two {
-  margin: 0px 5px;
-  padding: 2px 5px;
+  margin: 0px 0.313rem;
+  padding: 0.125rem 0.313rem;
   width: 33%;
   background-color: white;
   font-size: 160%;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px grey;
+  border-radius: 0.313rem;
+  box-shadow: 0px 0px 0.5rem grey;
 }
 .conteiner .sessao_um .section_two .bosses {
   display: flex;
@@ -872,23 +858,23 @@ footer p {
 .conteiner_selection {
   display: flex;
   width: 100%;
-  height: 97vh;
+  height: 45.6rem;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
 .conteiner_selection .selection_word {
-  height: 25vh;
-  min-height: 25vh;
-  padding: 10px 10px;
+  height: 11.5rem;
+  min-height: 11.5rem;
+  padding: 0.625rem 0.625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   align-items: center;
-  width: 60vh;
-  min-width: 60vh;
-  background-color: rgba(238, 238, 238, 0.7);
+  width: 27.38rem;
+  min-width: 27.38rem;
+  background-color: rgba(247, 247, 247, 0.7);
   text-align: center;
 }
 .conteiner_selection .selection_word form {
@@ -898,11 +884,12 @@ footer p {
   justify-content: space-around;
 }
 .conteiner_selection .selection_word form select {
-  padding: 0.4vw 15vh;
+  padding: 0.45rem 6.875rem;
   outline: 0;
   border: 0 !important;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.313rem;
+  text-align: center;
 }
 .conteiner_selection .selection_word form select option {
   text-align: center;
@@ -910,20 +897,20 @@ footer p {
 .conteiner_selection .selection_word form input {
   text-decoration: none;
   text-align: center;
-  padding: 0.4vw;
-  border-radius: 5px;
+  padding: 0.3rem;
+  border-radius: 0.313rem;
   cursor: pointer;
   border: none;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: rgba(7, 42, 41, 0.8);
-  box-shadow: 0 0 3px #072a29;
-  background-color: #eeeeee;
+  color: rgba(19, 28, 33, 0.8);
+  box-shadow: 0 0 0.313rem #131c21;
+  background-color: #f7f7f7;
 }
 .conteiner_selection .selection_word form a {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  color: rgba(7, 42, 41, 0.8);
+  color: rgba(19, 28, 33, 0.8);
   font-size: 80%;
 }
 .conteiner_selection .selection_word form .nopreench {
