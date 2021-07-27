@@ -351,7 +351,7 @@
                 background-color: white;
                 font-size: 160%;
                 border-radius: 0.313rem;
-                box-shadow: 0px 0px 0.5rem grey;
+                box-shadow: 0px 0px 0.5rem $sombra-escura;
                 
                 .bosses{
                     display: flex;
@@ -362,15 +362,19 @@
                 
                     .alo1{
                         background-color: green;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50px;   
+                        width: 3.125rem;
+                        max-width: 3.125rem;
+                        min-width: 3.125rem;
+                        height: 3.125rem;
+                        max-height: 3.125rem;
+                        min-height: 3.125rem;
+                        border-radius: 3.125rem;   
                        
                         .orsha{
-                            margin: 5px 5px;
+                            margin:0.313rem 0.313rem;
                             width: 80%;
                             height: 80%;
-                            background-color: white;
+                            background-color: $cor-primaria;
                             border-radius: 100%;
 
 
@@ -390,26 +394,30 @@
 
                         .orsha_txt{
                             display: none;
-                            background-color: rgb(238,238,238);
-                            width: 15vh;
+                            background-color: $cor-primaria;
+                            width: 7.25rem;
                             font-size: 50%;
                             padding: 20% 0;
                             border-radius: 5%;
-                            box-shadow: 0px 0px 8px grey;;
+                            box-shadow: 0px 0px 0.825rem grey;
                         }                            
                     }
                     .alo2{
                         background-color: green;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50px;
+                        width: 3.125rem;
+                        max-width: 3.125rem;
+                        min-width: 3.125rem;
+                        height: 3.125rem;
+                        max-height: 3.125rem;
+                        min-height: 3.125rem;
+                        border-radius: 3.125rem;   
                         
                        
                         .ferumb{
-                            margin: 5px 5px;
+                            margin:0.313rem 0.313rem;
                             width: 80%;
                             height: 80%;
-                            background-color: white;
+                            background-color: $cor-primaria;
                             border-radius: 100%;
                             
                             img{
@@ -428,25 +436,30 @@
 
                         .ferumb_txt{
                             display: none;
-                            background-color: rgb(238,238,238);
-                            width: 15vh;
+                            background-color: $cor-primaria;
+                            width: 7.25rem;
                             font-size: 50%;
                             padding: 20% 0;
                             border-radius: 5%;
-                            box-shadow: 0px 0px 8px grey;;
+                            box-shadow: 0px 0px 0.825rem grey;
                         }
                     }
                     .alo3{
                         background-color: green;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50px;
+                        width: 3.125rem;
+                        max-width: 3.125rem;
+                        min-width: 3.125rem;
+                        height: 3.125rem;
+                        max-height: 3.125rem;
+                        min-height: 3.125rem;
+                        border-radius: 3.125rem;   
+                       
                         
                         .morg{
-                            margin: 5px 5px;
+                            margin:0.313rem 0.313rem;
                             width: 80%;
                             height: 80%;
-                            background-color: white;
+                            background-color: $cor-primaria;
                             border-radius: 100%;
 
                             img{
@@ -464,26 +477,30 @@
 
                         .morg_txt{
                             display: none;
-                            background-color: rgb(238,238,238);
-                            width: 15vh;
+                            background-color: $cor-primaria;
+                            width: 7.25rem;
                             font-size: 50%;
                             padding: 20% 0;
                             border-radius: 5%;
-                            box-shadow: 0px 0px 8px grey;;
+                            box-shadow: 0px 0px 0.825rem grey;
                         }
                         
                     } 
                     .alo4{
                         background-color: green;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50px;                   
+                        width: 3.125rem;
+                        max-width: 3.125rem;
+                        min-width: 3.125rem;
+                        height: 3.125rem;
+                        max-height: 3.125rem;
+                        min-height: 3.125rem;
+                        border-radius: 3.125rem;                    
                         
                         .gaz{
-                            margin: 5px 5px;
+                            margin:0.313rem 0.313rem;
                             width: 80%;
                             height: 80%;
-                            background-color: white;
+                            background-color: $cor-primaria;
                             border-radius: 100%;
 
                             img{
@@ -501,12 +518,12 @@
 
                         .gaz_txt{
                             display: none;
-                            background-color: rgb(238,238,238);
-                            width: 15vh;
+                            background-color: $cor-primaria;
+                            width: 7.25rem;
                             font-size: 50%;
                             padding: 20% 0;
                             border-radius: 5%;
-                            box-shadow: 0px 0px 8px grey;;
+                            box-shadow: 0px 0px 0.825rem grey;
                         }
                            
                     }
@@ -515,13 +532,13 @@
             
             }
             .section_three{
-                margin: 0px 5px;
-                padding: 2px 5px;
+                margin: 0rem 0.313rem;
+                padding: 0.2rem 0.313rem;
                 width: 33%;
                 background-color: white;
                 font-size: 160%;
-                border-radius: 5px;
-                box-shadow: 0px 0px 8px grey;
+                border-radius: 0.313rem;
+                box-shadow: 0px 0px 0.825rem grey;
 
                 .events{
                     display: flex;
@@ -547,12 +564,11 @@
         }
 
         .sessao_dois{
-            margin: 5px 10px;
+            margin: 0.313rem 0.625rem;
             display: flex;
             justify-content: center;
-
             text-align: center;
-            color: rgb(7,42,41);
+            color: $cor-secundaria;
             
             .lore_one{
                 width: 50%;
