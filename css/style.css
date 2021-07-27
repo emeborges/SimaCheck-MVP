@@ -13,6 +13,7 @@
 body {
   background-color: #f7f7f7;
   margin: 0 auto;
+  min-width: 100vh;
 }
 
 /* Página Radar e Complementares*/
@@ -319,7 +320,6 @@ footer p {
   position: relative;
 }
 .conteiner .sessao_um .section_two .bosses .alo1 {
-  background-color: green;
   width: 3.125rem;
   max-width: 3.125rem;
   min-width: 3.125rem;
@@ -353,7 +353,6 @@ footer p {
   box-shadow: 0px 0px 0.825rem grey;
 }
 .conteiner .sessao_um .section_two .bosses .alo2 {
-  background-color: green;
   width: 3.125rem;
   max-width: 3.125rem;
   min-width: 3.125rem;
@@ -387,7 +386,6 @@ footer p {
   box-shadow: 0px 0px 0.825rem grey;
 }
 .conteiner .sessao_um .section_two .bosses .alo3 {
-  background-color: green;
   width: 3.125rem;
   max-width: 3.125rem;
   min-width: 3.125rem;
@@ -421,7 +419,6 @@ footer p {
   box-shadow: 0px 0px 0.825rem grey;
 }
 .conteiner .sessao_um .section_two .bosses .alo4 {
-  background-color: green;
   width: 3.125rem;
   max-width: 3.125rem;
   min-width: 3.125rem;
@@ -486,18 +483,20 @@ footer p {
   justify-content: center;
   text-align: center;
   color: #131c21;
+  flex-flow: row wrap;
 }
 .conteiner .sessao_dois .lore_one {
-  width: 50%;
+  width: 49%;
+  min-width: 35rem;
   background-color: white;
-  margin: 5px;
-  height: 400px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px grey;
+  margin: 0.313rem;
+  height: 25rem;
+  border-radius: 0.313rem;
+  box-shadow: 0px 0px 0.5rem rgba(19, 28, 33, 0.6);
   overflow: auto;
 }
 .conteiner .sessao_dois .lore_one h3 {
-  padding: 5px;
+  padding: 0.313rem;
 }
 .conteiner .sessao_dois .lore_one .table_one {
   table-layout: fixed;
@@ -506,291 +505,39 @@ footer p {
   overflow: auto;
 }
 .conteiner .sessao_dois .lore_one .table_one thead {
-  background-color: rgba(7, 42, 41, 0.5);
+  background-color: rgba(19, 28, 33, 0.5);
 }
 .conteiner .sessao_dois .lore_one .table_one thead th {
-  padding: 6px 0px;
+  padding: 0.375rem 0px;
 }
 .conteiner .sessao_dois .lore_one .table_one tbody tr .bicho .area1 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: green;
+  margin: 0px 2.813rem;
+  min-width: 3rem;
+  padding: 0.313rem 0.313rem;
+  border-radius: 3.125rem;
 }
 .conteiner .sessao_dois .lore_one .table_one tbody tr .bicho .area1 .area_in {
   padding: 3px 3px;
   border-radius: 50px;
   background-color: white;
 }
-.conteiner .sessao_dois .lore_one .table_one tbody tr .bicho .area2 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: yellow;
-}
-.conteiner .sessao_dois .lore_one .table_one tbody tr .bicho .area2 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_dois .lore_one .table_one tbody tr .bicho .area3 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: grey;
-}
-.conteiner .sessao_dois .lore_one .table_one tbody tr .bicho .area3 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_dois .lore_one .table_one tbody tr .bicho .area4 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: grey;
-}
-.conteiner .sessao_dois .lore_one .table_one tbody tr .bicho .area4 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_dois .lore_one .table_one tbody tr:nth-child(even) {
-  background-color: rgba(7, 42, 41, 0.05);
-}
-.conteiner .sessao_dois .lore_two {
-  width: 50%;
-  background-color: white;
-  margin: 5px;
-  height: 400px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px grey;
-  overflow: auto;
-}
-.conteiner .sessao_dois .lore_two h3 {
-  padding: 5px;
-}
-.conteiner .sessao_dois .lore_two .table_one {
-  table-layout: fixed;
-  width: 100%;
-  font-size: 90%;
-  overflow: auto;
-}
-.conteiner .sessao_dois .lore_two .table_one thead {
-  background-color: rgba(7, 42, 41, 0.5);
-}
-.conteiner .sessao_dois .lore_two .table_one thead th {
-  padding: 6px 0px;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr .bicho .area1 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: green;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr .bicho .area1 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr .bicho .area2 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: yellow;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr .bicho .area2 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr .bicho .area3 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: grey;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr .bicho .area3 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr .bicho .area4 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: grey;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr .bicho .area4 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_dois .lore_two .table_one tbody tr:nth-child(even) {
-  background-color: rgba(7, 42, 41, 0.05);
-}
-.conteiner .sessao_tres {
-  margin: 5px 10px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: #072a29;
-}
-.conteiner .sessao_tres .lore_one {
-  width: 50%;
-  background-color: white;
-  margin: 5px;
-  height: 400px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px grey;
-  overflow: auto;
-}
-.conteiner .sessao_tres .lore_one h3 {
-  padding: 5px;
-}
-.conteiner .sessao_tres .lore_one .table_one {
-  table-layout: fixed;
-  width: 100%;
-  font-size: 90%;
-}
-.conteiner .sessao_tres .lore_one .table_one thead {
-  background-color: rgba(7, 42, 41, 0.5);
-}
-.conteiner .sessao_tres .lore_one .table_one thead th {
-  padding: 6px 0px;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr .bicho .area1 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: green;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr .bicho .area1 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr .bicho .area2 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: yellow;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr .bicho .area2 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr .bicho .area3 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: grey;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr .bicho .area3 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr .bicho .area4 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: grey;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr .bicho .area4 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_tres .lore_one .table_one tbody tr:nth-child(even) {
-  background-color: rgba(7, 42, 41, 0.05);
-}
-.conteiner .sessao_tres .lore_two {
-  width: 50%;
-  background-color: white;
-  margin: 5px;
-  height: 400px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px grey;
-  overflow: auto;
-}
-.conteiner .sessao_tres .lore_two h3 {
-  padding: 5px;
-}
-.conteiner .sessao_tres .lore_two .table_one {
-  table-layout: fixed;
-  width: 100%;
-  font-size: 90%;
-  overflow: auto;
-}
-.conteiner .sessao_tres .lore_two .table_one thead {
-  background-color: rgba(7, 42, 41, 0.5);
-}
-.conteiner .sessao_tres .lore_two .table_one thead th {
-  padding: 6px 0px;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr .bicho .area1 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: green;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr .bicho .area1 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr .bicho .area2 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: yellow;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr .bicho .area2 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr .bicho .area3 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: grey;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr .bicho .area3 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr .bicho .area4 {
-  margin: 0px 45px;
-  padding: 5px 5px;
-  border-radius: 50px;
-  background-color: grey;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr .bicho .area4 .area_in {
-  padding: 3px 3px;
-  border-radius: 50px;
-  background-color: white;
-}
-.conteiner .sessao_tres .lore_two .table_one tbody tr:nth-child(even) {
-  background-color: rgba(7, 42, 41, 0.05);
+.conteiner .sessao_dois .lore_one .table_one tbody tr tr:nth-child(even) {
+  background-color: rgba(19, 28, 33, 0.05);
 }
 .conteiner .sessao_doisdois .section_one {
-  margin: 5px 15px;
+  margin: 0.313rem 0.938rem;
   justify-content: center;
   text-align: center;
-  color: #072a29;
+  color: #131c21;
   background-color: white;
   align-items: center;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px grey;
+  border-radius: 0.313rem;
+  box-shadow: 0px 0px 0.5rem rgba(19, 28, 33, 0.6);
   height: 100%;
-  padding: 10px 0px;
+  padding: 0.625rem 0px;
 }
 .conteiner .sessao_doisdois .section_one table {
-  padding: 10px 0px;
+  padding: 0.625 0px;
   table-layout: fixed;
   width: 100%;
   font-size: 80%;
@@ -799,75 +546,75 @@ footer p {
   font-size: 90%;
 }
 .conteiner .sessao_doisdois .section_one table thead {
-  background-color: rgba(7, 42, 41, 0.5);
+  background-color: rgba(19, 28, 33, 0.5);
 }
 .conteiner .sessao_doisdois .section_one table thead th {
-  padding: 6px 0px;
+  padding: 0.375rem 0px;
 }
 .conteiner .sessao_doisdois .section_one table tbody tr .bicho .area1 {
   margin: auto;
-  padding: 4px 4px;
-  border-radius: 50px;
+  min-width: 3rem;
+  padding: 0.25rem 0.25rem;
+  border-radius: 3.125rem;
   width: 40%;
-  background-color: green;
 }
 .conteiner .sessao_doisdois .section_one table tbody tr .bicho .area1 .area_in {
-  padding: 4px 4px;
-  border-radius: 50px;
+  padding: 0.25rem 0.25rem;
+  border-radius: 3.13rem;
   width: 100%;
   background-color: white;
 }
 .conteiner .sessao_doisdois .section_one table tbody tr:nth-child(even) {
-  background-color: rgba(7, 42, 41, 0.1);
+  background-color: rgba(19, 28, 33, 0.05);
 }
 .conteiner .sessao_cum {
-  margin: 5px 15px;
-  color: #072a29;
+  margin: 0.625rem 0.938rem;
+  color: #131c21;
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px grey;
-  height: 75vh;
+  border-radius: 0.313rem;
+  box-shadow: 0px 0px 0.5rem grey;
+  height: 73vh;
 }
 .conteiner .sessao_cum .horiz_one {
   display: flex;
-  padding: 10px 0px;
+  padding: 0.625rem 0px;
   justify-content: center;
   text-align: center;
 }
 .conteiner .sessao_cum .horiz_one .one {
   margin: auto;
-  padding: 10px 0px;
+  padding: 0.625rem 0px;
   width: 20%;
-  height: 15vh;
+  height: 5rem;
 }
 .conteiner .sessao_cum .horiz_one .two {
   margin: auto;
-  padding: 10px 0px;
+  padding: 0.625rem 0px;
   width: 70%;
-  height: 20vh;
+  height: 100%;
 }
 .conteiner .sessao_cum .horiz_one .two .caract {
   display: flex;
   justify-content: space-around;
-  padding: 20px 0px;
+  padding: 1.25rem 0px;
 }
 .conteiner .sessao_cum .horiz_one .two .caract .ind_one {
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
 }
 .conteiner .sessao_cum .horiz_one .two .caract .ind_two {
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
 }
 .conteiner .sessao_cum .horiz_one .two .caract .ind_three {
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
 }
 .conteiner .sessao_cum .horiz_one .two .caract .ind_four {
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
 }
 .conteiner .sessao_cum .horiz_one .two .caract .ind_five {
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
 }
 .conteiner .sessao_cum .horiz_one .two .caract .ind_six {
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
 }
 
 /* Página de Filtrar */
@@ -937,4 +684,16 @@ footer p {
 .block {
   background-image: url(/img/home1.png);
   background-size: cover;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: #dfdc3b;
+}
+
+.red {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
