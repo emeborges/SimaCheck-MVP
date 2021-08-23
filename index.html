@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua bússula dos bosses | SimaCheck</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     
@@ -14,7 +17,7 @@
             <nav>
                 <ul class="left_menu">
                     <li>
-                    <a href="#inicio" class="visited">Home</a>
+                        <a href="#inicio" class="noVisited">Home</a>
                     </li>
                     <li>
                         <a href="#comoFunciona" class="noVisited">Como Funciona</a>
@@ -24,7 +27,7 @@
                     </li>
                 </ul>
             </nav>
-            <img src="/img/Logo.png" height=50px class="logotipo"> <!-- -->
+
             <nav>
                 <ul class="right_menu">
                     <li class="botaoEntrar">
@@ -40,8 +43,13 @@
 
     <section class="home_one paralax" id="inicio">
         
-        <h2>SEU BOSS HUNT NUNCA MAIS SERÁ O MESMO..</h2>
-        <button class="botaoInfos" onclick="rolagemSuave ()">COMO FUNCIONA</button>
+            
+        
+        <div class="dadosUm">
+            <img src="/img/Logo horizontal.png">
+            <h2>SEU BOSS HUNT NUNCA MAIS SERÁ O MESMO..</h2>
+            <button class="botaoInfos" onclick="rolagemSuave (event)">COMO FUNCIONA</button>
+        </div>
     </section>
     <section class="home_two" id="comoFunciona">
         
@@ -79,7 +87,7 @@
         </div>
         <div class="comunidades">
             <div class="com_one">
-                <a href="www.guildwalhalla.com.br"><img src="/img/walhalla.png" alt="walhalla" srcset=""></a>
+                <a href=""><img src="/img/walhalla.png" alt="walhalla" srcset=""></a>
                 <h4>Guilda Walhala</h4>
                 <p>A guilda Walhala está presente no servidor de Kalibra e com mais de seus 85 players é um membro importantíssimo desta plataforma.</p>
 
@@ -93,46 +101,44 @@
     </section>
 
     <section class="home_four">
-        <h2>CONTATO</h2>
-        <div class="contato">
-            <div class="infos">
-                <p>Para maiores informações, entre em contato através de nossas redes sociais ou através do nosso formulário.</p>
-                <div class="redes_sociais">
-                    <a href="" target="_blank"><img src="/img/whats.svg" alt="" srcset="" width="60px"></a>
-                    <a href="" target="_blank"><img src="/img/insta.svg" alt="" srcset="" width="60px"></a>
-                    <a href="" target="_blank"><img src="/img/facebook.svg" alt="" srcset="" width="60px"></a>
-                </div>
+        <h2>CHECKS</h2>
+        <div class="swiper-container">
+           
+            <div class="swiper-wrapper">         
+                <div class="swiper-slide"><img src="/img/Prints/2Relato.png" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/2.jpeg" alt=""></div>
+                <div class="swiper-slide"> <img src="/img/Prints/3Relat.png" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/3.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/4Relat.png" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/4.jpeg" alt=""></div>
+                <div class="swiper-slide"> <img src="/img/Prints/4.1.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/5Relat.png" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/5.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/5.1.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/6Relat.png" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/6.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/7Relat.png" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/7.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/8Relat.png" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/8.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/9Relat.png" alt=""></div>
+                <div class="swiper-slide"><img src="/img/Prints/9.jpeg" alt=""></div>
             </div>
-            <div class="forms">
-                <form action="">
-                    <div class="forms_unit">
-                        <label for="fnome">Nome:</label><br>
-                        <input type="text" placeholder="Digite o seu nome."><br>
-                    </div>
-                    <div class="forms_unit">
-                        <label for="femail">E-mail:</label><br>
-                        <input type="email" placeholder="Digite o seu e-mail."><br>
-                    </div>
-                    <div class="forms_unit">
-                        <label for="ftel">Telefone:</label><br>
-                        <input type="tel" placeholder="Digite o seu número de WhatsApp."><br>
-                    </div>
-                    <div class="forms_unit">
-                        <label for="fduvida">Dúvida:</label><br>
-                        <input type="text" placeholder="Digite a sua dúvida." class="duvida"><br>
-                    </div>
-                    <div class="botao">
-                        <button>Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+        
     </section>
 
     <footer>
         <p>©️ Simacheck.com.br 2021, all rights reserved. Tibia and TibiaME are trademarks of CipSoft GmbH.</p>
     </footer>
 
+   
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
