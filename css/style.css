@@ -249,17 +249,17 @@ body {
   background-color: #131c21;
   color: #f7f7f7;
 }
-.home_four .swiper-container {
+.home_four .swiper {
   max-width: 60rem;
   max-height: 30rem;
 }
-.home_four .swiper-container img {
+.home_four .swiper .swiper-slide {
+  width: 30px;
+}
+.home_four .swiper .swiper-slide img {
   max-width: 60rem;
   max-height: 30rem;
   padding: 0rem 5rem 0rem 5rem;
-}
-.home_four .swiper-container .swiper-button-next, .home_four .swiper-container .swiper-button-prev {
-  color: #131c21;
 }
 
 footer {

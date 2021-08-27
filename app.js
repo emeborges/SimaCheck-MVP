@@ -1,5 +1,5 @@
 // Módulo de Slider da parte de Checks
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
     // Optional parameters
     
     loop: true,

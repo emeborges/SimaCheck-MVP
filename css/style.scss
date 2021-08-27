@@ -273,23 +273,22 @@
             color:$cor-primaria;
         }
 
-        .swiper-container {
+        .swiper{
             max-width:60rem;
             max-height: 30rem;
             
-            
+            .swiper-slide{
+                width: 30px;
 
-            img{
-                max-width: 60rem;
-                max-height: 30rem;
-                padding: 0rem 5rem 0rem 5rem;
+                img{
+                    max-width: 60rem;
+                    max-height: 30rem;
+                    padding: 0rem 5rem 0rem 5rem;
 
+                }
+
+                
             }
-
-            .swiper-button-next, .swiper-button-prev{
-                color: $cor-secundaria;
-            }
-        
         }
 
 
