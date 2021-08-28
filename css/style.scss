@@ -2,7 +2,6 @@
 @import 'variables';
 
 
-/* Página Radar e Complementares*/
 
 /* Página Home*/
     .page_index{
@@ -36,31 +35,59 @@
                 display: flex;
                 list-style: none;
 
-                li{
+                :hover > .submenu{
+                    display:block;
+                }
+
+                .segmento{
+                    display: flex;
+                    flex-direction: column;
                     position: relative;
-                
+                    align-items: center;
 
-                    }
-                    :hover{
-                        background-color: $cor-primaria;
-                        color: $cor-secundaria;
-                    }    
-                    
-                    a{
-                        display: block;
-                        text-decoration: none;
-                        padding: 1.875rem 1.25rem;
-                        color:$cor-primaria;
-
-                        :visited{
-                            text-decoration: none;
-                            color:$cor-primaria;
-                        }
-
-                    }
                     
                 }
+                
+                
+
+                a{
+                    display: block;
+                    text-decoration: none;
+                    padding: 1.875rem 1.25rem;
+                    color:$cor-primaria;
+
+                    :visited{
+                        text-decoration: none;
+                        color:$cor-primaria;
+                    }
+                    
+
+                }
+                .submenu{
+                    font-size: 100%;
+                    display: none;
+                    position: absolute;
+                    top: 5rem;
+                    left: 0;
+                    list-style: none;
+                    background-color: $cor-secundaria-opc;
+                    box-shadow: $sombra-escura;
+                    min-width: 110%;
+                    
+
+                    :hover{
+                        background-color: $cor-secundaria;
+                    }
+                    
+                }   
+                    
+                
+                    
+                    
+                
+                
             }
+        }
 
             .right_menu{
                 text-decoration: none;
@@ -751,14 +778,26 @@
         align-items: center;
         justify-content: center;
 
-
-        .selection_word{
-            height: 11.5rem;
-            min-height: 11.5rem;
+        .perfil{
+            background-color: $cor-primaria-opc-iii;
+            height: 15rem;
+            width: 20rem;
             padding: 0.625rem 0.625rem;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            border-radius: 0.625rem;
+            align-items: center;
+            margin-right: 0.5rem;
+        }
+        
+        .selection_word{
+            height: 15rem;
+            min-height: 11.5rem;
+            padding: 0.625rem 0.625rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             border-radius: 0.625rem;
             align-items: center;
             width: 27.38rem;
@@ -766,26 +805,49 @@
             background-color: $cor-primaria-opc-iii;
             text-align: center;
           
-
-            form{
-                height: 60%;
+            .characters{
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-between;
+                width: 100%;
+                height: 55rem;
+                padding-bottom: 1rem;
                 
-               
+                .char{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 33%;
+                    background-color: $cor-secundaria-iii;
+                    border-radius: 5px;
+                    padding: 0.3rem;
+                    
+
+                    
+
+                    p{
+                        font-size: 80%;
+                    }
+                }
+            }
+
+
+            #verification{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                
+                                               
                 select{
-                    padding: 0.45rem 6.875rem;
+                    font-size: 80%;
+                    height: 2rem;
+                    padding: 0.1rem;
                     outline: 0;
                     border: 0 !important;
                     cursor: pointer;
                     border-radius: 0.313rem;
-                    text-align: center;
-                
-                    option{
-                        text-align: center;
-                    }
-                    
+                    width: 70%;   
                 }
 
                 input{
@@ -823,6 +885,7 @@
 .block{
     background-image: url(/img/home1.png);
     background-size: cover;
+    
 }   
 
 .green{

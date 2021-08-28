@@ -16,7 +16,6 @@ body {
   min-width: 100vh;
 }
 
-/* Página Radar e Complementares*/
 /* Página Home*/
 .page_index {
   position: fixed;
@@ -43,12 +42,14 @@ body {
   display: flex;
   list-style: none;
 }
-.nav_home .menu .left_menu li {
-  position: relative;
+.nav_home .menu .left_menu :hover > .submenu {
+  display: block;
 }
-.nav_home .menu .left_menu :hover {
-  background-color: #f7f7f7;
-  color: #131c21;
+.nav_home .menu .left_menu .segmento {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
 }
 .nav_home .menu .left_menu a {
   display: block;
@@ -59,6 +60,20 @@ body {
 .nav_home .menu .left_menu a :visited {
   text-decoration: none;
   color: #f7f7f7;
+}
+.nav_home .menu .left_menu .submenu {
+  font-size: 100%;
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  list-style: none;
+  background-color: rgba(19, 28, 33, 0.8);
+  box-shadow: rgba(19, 28, 33, 0.6);
+  min-width: 110%;
+}
+.nav_home .menu .left_menu .submenu :hover {
+  background-color: #131c21;
 }
 .nav_home .right_menu {
   text-decoration: none;
@@ -626,13 +641,25 @@ footer p {
   align-items: center;
   justify-content: center;
 }
-.conteiner_selection .selection_word {
-  height: 11.5rem;
-  min-height: 11.5rem;
+.conteiner_selection .perfil {
+  background-color: rgba(247, 247, 247, 0.7);
+  height: 15rem;
+  width: 20rem;
   padding: 0.625rem 0.625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-radius: 0.625rem;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.conteiner_selection .selection_word {
+  height: 15rem;
+  min-height: 11.5rem;
+  padding: 0.625rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 0.625rem;
   align-items: center;
   width: 27.38rem;
@@ -640,24 +667,42 @@ footer p {
   background-color: rgba(247, 247, 247, 0.7);
   text-align: center;
 }
-.conteiner_selection .selection_word form {
-  height: 60%;
+.conteiner_selection .selection_word .characters {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 55rem;
+  padding-bottom: 1rem;
+}
+.conteiner_selection .selection_word .characters .char {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  width: 33%;
+  background-color: rgba(19, 28, 33, 0.5);
+  border-radius: 5px;
+  padding: 0.3rem;
 }
-.conteiner_selection .selection_word form select {
-  padding: 0.45rem 6.875rem;
+.conteiner_selection .selection_word .characters .char p {
+  font-size: 80%;
+}
+.conteiner_selection .selection_word #verification {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.conteiner_selection .selection_word #verification select {
+  font-size: 80%;
+  height: 2rem;
+  padding: 0.1rem;
   outline: 0;
   border: 0 !important;
   cursor: pointer;
   border-radius: 0.313rem;
-  text-align: center;
+  width: 70%;
 }
-.conteiner_selection .selection_word form select option {
-  text-align: center;
-}
-.conteiner_selection .selection_word form input {
+.conteiner_selection .selection_word #verification input {
   text-decoration: none;
   text-align: center;
   padding: 0.3rem;
@@ -670,13 +715,13 @@ footer p {
   box-shadow: 0 0 0.313rem #131c21;
   background-color: #f7f7f7;
 }
-.conteiner_selection .selection_word form a {
+.conteiner_selection .selection_word #verification a {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: rgba(19, 28, 33, 0.8);
   font-size: 80%;
 }
-.conteiner_selection .selection_word form .nopreench {
+.conteiner_selection .selection_word #verification .nopreench {
   border: solid 10px red;
 }
 
