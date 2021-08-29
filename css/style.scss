@@ -780,19 +780,19 @@
 
         .perfil{
             background-color: $cor-primaria-opc-iii;
-            height: 15rem;
+            height: 15.5rem;
             width: 20rem;
             padding: 0.625rem 0.625rem;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             border-radius: 0.625rem;
             align-items: center;
             margin-right: 0.5rem;
         }
         
         .selection_word{
-            height: 15rem;
+            height: 15.5rem;
             min-height: 11.5rem;
             padding: 0.625rem 0.625rem;
             display: flex;
@@ -885,6 +885,7 @@
 .block{
     background-image: url(/img/home1.png);
     background-size: cover;
+    backdrop-filter: brightness(80%);
     
 }   
 

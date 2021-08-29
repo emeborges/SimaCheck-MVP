@@ -643,18 +643,18 @@ footer p {
 }
 .conteiner_selection .perfil {
   background-color: rgba(247, 247, 247, 0.7);
-  height: 15rem;
+  height: 15.5rem;
   width: 20rem;
   padding: 0.625rem 0.625rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   border-radius: 0.625rem;
   align-items: center;
   margin-right: 0.5rem;
 }
 .conteiner_selection .selection_word {
-  height: 15rem;
+  height: 15.5rem;
   min-height: 11.5rem;
   padding: 0.625rem 0.625rem;
   display: flex;
@@ -729,6 +729,8 @@ footer p {
 .block {
   background-image: url(/img/home1.png);
   background-size: cover;
+  -webkit-backdrop-filter: brightness(80%);
+          backdrop-filter: brightness(80%);
 }
 
 .green {
