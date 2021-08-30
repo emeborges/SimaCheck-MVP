@@ -779,20 +779,69 @@
         justify-content: center;
 
         .perfil{
+            text-align:justify;
             background-color: $cor-primaria-opc-iii;
-            height: 15.5rem;
-            width: 20rem;
+            height: 16rem;
+            width: 18rem;
             padding: 0.625rem 0.625rem;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content:space-between;
             border-radius: 0.625rem;
-            align-items: center;
             margin-right: 0.5rem;
-        }
+
+            .dados-pessoais{
+                padding: 0.3rem;
+                line-height: 100%;
+                align-items: center;
+                text-indent: 1rem;
+            }
+                h3{
+                    text-align: center;
+                }
+
+                .links{
+                    text-align: center;
+
+                    a{               
+                    text-decoration: underline;
+                    text-transform: none;
+                    color: black;
+                    font-size: 70%;
+                    }
+                }
+            
         
+            .adicionarChar{
+                text-align: center;
+                text-indent: 0;
+                line-height: 115%;
+                padding-bottom: 1rem;
+
+                h5{
+                    text-align: left;
+                    font-size: 80%;
+                    text-indent: 0.6rem;
+                }
+                .txt{
+                    text-indent: 0.5rem;
+                    font-size: 80%;
+                    width: 12rem;
+                    height: 1.4rem;
+                }
+                .button{
+                    text-align: left;
+                    font-size: 80%;
+                    
+                    height: 1.4rem;
+                }
+
+            
+            }
+        }
+
         .selection_word{
-            height: 15.5rem;
+            height: 16rem;
             min-height: 11.5rem;
             padding: 0.625rem 0.625rem;
             display: flex;

@@ -642,19 +642,59 @@ footer p {
   justify-content: center;
 }
 .conteiner_selection .perfil {
+  text-align: justify;
   background-color: rgba(247, 247, 247, 0.7);
-  height: 15.5rem;
-  width: 20rem;
+  height: 16rem;
+  width: 18rem;
   padding: 0.625rem 0.625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 0.625rem;
-  align-items: center;
   margin-right: 0.5rem;
 }
+.conteiner_selection .perfil .dados-pessoais {
+  padding: 0.3rem;
+  line-height: 100%;
+  align-items: center;
+  text-indent: 1rem;
+}
+.conteiner_selection .perfil h3 {
+  text-align: center;
+}
+.conteiner_selection .perfil .links {
+  text-align: center;
+}
+.conteiner_selection .perfil .links a {
+  text-decoration: underline;
+  text-transform: none;
+  color: black;
+  font-size: 70%;
+}
+.conteiner_selection .perfil .adicionarChar {
+  text-align: center;
+  text-indent: 0;
+  line-height: 115%;
+  padding-bottom: 1rem;
+}
+.conteiner_selection .perfil .adicionarChar h5 {
+  text-align: left;
+  font-size: 80%;
+  text-indent: 0.6rem;
+}
+.conteiner_selection .perfil .adicionarChar .txt {
+  text-indent: 0.5rem;
+  font-size: 80%;
+  width: 12rem;
+  height: 1.4rem;
+}
+.conteiner_selection .perfil .adicionarChar .button {
+  text-align: left;
+  font-size: 80%;
+  height: 1.4rem;
+}
 .conteiner_selection .selection_word {
-  height: 15.5rem;
+  height: 16rem;
   min-height: 11.5rem;
   padding: 0.625rem 0.625rem;
   display: flex;
