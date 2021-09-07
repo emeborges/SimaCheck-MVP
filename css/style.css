@@ -649,7 +649,7 @@ footer p {
   padding: 0.625rem 0.625rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 0.625rem;
   margin-right: 0.5rem;
 }
