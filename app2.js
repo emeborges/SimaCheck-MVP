@@ -18,55 +18,30 @@ function checkInput(){
   
 }
 
-    const $btnAdd = document.querySelector('#sendFilterMundo');
-    const $char = document.querySelector('#charAdicionado')
+// CONSULTADO LOCAL STORAGE E ADICIONANDO CHARES
 
-    $btnAdd.addEventListener("click", function(e){
-        
-        let search = $char.value.replace(" ","+")
-        console.log(search)
-
-        const options = {
-            method: 'GET',
-            mode: 'cors',
-            cache: 'default'
-        }
-
-        fetch(`https://api.tibiadata.com/v2/characters/${search}.json`, options)
-            .then( response =>{response.json()
-                .then(data => { testando(data)
-                    }
-                        )})
-            .catch(e => console.log('erro' + e,message))
-
-    })
+const charOne = localStorage.getItem('charName0') 
+const lvlOne = localStorage.getItem('charLvl0') 
+const mundoOne = localStorage.getItem('charMundo0') 
+const profOne = localStorage.getItem('charVocac0') 
+const localAdd = document.querySelector('.characters')
 
 
-function testando(data){
-    console.log(data)
-    const nameChar = data.characters.data.name
-    const worldChar = data.characters.data.world
-    const vocacChar = data.characters.data.vocation
-    const levelChar = data.characters.data.level
-    const divIncluir = document.querySelector(".characters")
+if(charOne === undefined, charOne === null)
+localAdd.innerHTML = '<p>Você ainda não tem personagens adicionados, clique  <a href="/addchar.html">AQUI</a> para adicionar</p>'
+else
+localAdd.innerHTML = `<div class="char">
+                        <input type="radio" name="char" id="texte1" value="${mundoOne}">
+                        <label for="texte1" >
+                            <h5>${charOne}</h5>
+                            <p>${profOne}</p>
+                            <p>${lvlOne}</p>
+                            <p>${mundoOne}</p>
+                            
+                            <img src="./img/profs/Outfit_Druid_Female_Addon_3.gif" alt="">
+                            
+                        </label>
 
-    divIncluir.innerHTML += `
-                            <div class="char">
-                                <input type="radio" value="${worldChar}" name="char" id="texte1">
-                                    <label for="texte1" >
-                                        <h5>${nameChar}</h5>
-                                        <p>${vocacChar}</p>
-                                        <p>${worldChar}</p>
-                                        <p>${levelChar}</p>
-                                        <img src="./img/profs/Outfit_Druid_Female_Addon_3.gif" alt="">
-                                        
-                                    </label>
-                            </div>
-                                `
-    // const sexoChar = data.characters.data.sex
-
-    
-
-    
-}
-
+                        
+                        </div>
+`

@@ -21,24 +21,21 @@
                         <h6>O e-mail de cadastro é: </h6>
                         <h6>Sua assinatura $ASSINATURA, acaba dia $DATA_RENOV e será renovada automaticamente.</h6>
                         <div class="links">
+                            <a href="/addchar.html">Adicionar/Remover Char</a><br>
                             <a href="">Alterar dados da assinatura</a><br>
                             <a href="">Cancelar Assinatura</a>
                     </div>
                     </div>
-                    
+                   
                 </div>
                 <div class="adicionarChar">
-                    <h5>Adicionar Char</h5>
-                    <form action="">
-                        <input class="txt" type="text"  id="charAdicionado" placeholder="Digite o nome do personagem">
-                        <input class="button" type="button" value="addChar" id="sendFilterMundo">
-                    </form>
+                    
                 </div>
             </div>
             <div class="selection_word">
                 <h3>SELECIONE O CHAR DESEJADO</h3>
-                    <form action="" class="characters">
-                        <div class="char">
+                    <form action="" class="characters" id="filtersMundo">
+                        <!-- <div class="char">
                             <input type="radio" name="char" id="texte1">
                             <label for="texte1" >
                                 <h5>Uriel Simacek</h5>
@@ -50,21 +47,12 @@
                             </label>
                         </div>
 
-                        
+                       -->
+
+                      
                     </form>
-                  
-                    <form class="selectWord" id="verification">
-                        <div class="servers">
-                            <select name="word" id="filtersMundo">
-                                <option value="" default>Selecione o mundo desejado</option>
-                                <option value="Tenebra">Tenebra</option>
-                                <option value="Calmera">Calmera</option>
-                            </select>
-                        </div> 
+                    <input type="button" value="Selecionar" id="sendFilterMundo" onclick="checkInput()">  
                     
-                        <input type="button" value="Selecionar" id="sendFilterMundo" onclick="checkInput()">
-                    
-                    </form>
 
                 <a href="index.html">Voltar ao Home</a>
             </div>

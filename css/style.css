@@ -649,7 +649,7 @@ footer p {
   padding: 0.625rem 0.625rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   border-radius: 0.625rem;
   margin-right: 0.5rem;
 }
@@ -763,6 +763,100 @@ footer p {
 }
 .conteiner_selection .selection_word #verification .nopreench {
   border: solid 10px red;
+}
+.conteiner_selection .addChar {
+  text-align: justify;
+  background-color: rgba(247, 247, 247, 0.7);
+  height: 21rem;
+  width: 35rem;
+  padding: 0.625rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  border-radius: 0.625rem;
+  margin-right: 0.5rem;
+}
+.conteiner_selection .addChar .adds {
+  height: 25%;
+  width: 100%;
+  padding: 0.625rem 0.625rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  margin-right: 0.5rem;
+}
+.conteiner_selection .addChar .adds .inputs {
+  height: 1.8rem;
+  width: 100%;
+  display: flex;
+  padding: 0.3rem 0rem 0rem;
+}
+.conteiner_selection .addChar .adds .inputs #txt {
+  margin-right: 0.5rem;
+}
+.conteiner_selection .addChar .adds .inputs #btn {
+  width: 15%;
+}
+.conteiner_selection .addChar .aviso {
+  min-width: 1rem;
+  font-size: 80%;
+}
+.conteiner_selection .addChar #listChares {
+  min-width: 100%;
+  min-height: 68%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.conteiner_selection .addChar #listChares .chares {
+  padding: 0.5rem;
+  margin-top: 0.34rem;
+  background-color: rgba(247, 247, 247, 0.7);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.625rem;
+}
+.conteiner_selection .addChar #listChares .chares .infosChar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.conteiner_selection .addChar #listChares .chares .infosMundo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.conteiner_selection .addChar #listChares .chares .delete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0.25rem;
+}
+.conteiner_selection .addChar #listChares .chares .delete input {
+  background-color: rgba(19, 28, 33, 0.5);
+  border-width: 0px;
+  color: rgba(247, 247, 247, 0.9);
+  border-style: outset;
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  border-radius: 100%;
+  text-shadow: none;
+}
+.conteiner_selection .addChar .retorno {
+  padding: 0.5rem 0rem 0rem 0.5rem;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.conteiner_selection .addChar .retorno a {
+  color: #131c21;
+  text-transform: none;
+  text-decoration: none;
 }
 
 /* Fundo Página de Perfil*/
