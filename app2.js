@@ -16,6 +16,7 @@ function addwords(){
         .catch(err => console.log('erro' + err,message))
 }
 
+<<<<<<< HEAD
 addwords()
 
 // ADICIONANDO AO HTML
@@ -30,3 +31,8 @@ form.onsubmit = function(e){
 
     
 }
+=======
+// ADICIONANDO AO HTML
+
+addwords()
+>>>>>>> e63887d2041908eb5941401a824d9ebffdb80a00
